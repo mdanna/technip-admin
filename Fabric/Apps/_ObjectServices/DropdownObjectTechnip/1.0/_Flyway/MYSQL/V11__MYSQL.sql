@@ -1,0 +1,15 @@
+CREATE TABLE `RegisterdUsers`(
+	`company` VARCHAR(40),
+	`CreatedBy` VARCHAR(32),
+	`CreatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+	`discipline` VARCHAR(40),
+	`email` VARCHAR(40) NOT NULL,
+	`fullName` VARCHAR(40),
+	`LastUpdatedBy` VARCHAR(32),
+	`LastUpdatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+	`password` VARCHAR(40),
+	`SoftDeleteFlag` BOOLEAN,
+	PRIMARY KEY(`email`)
+);
+ALTER TABLE `RegisterdUsers`
+	ADD CONSTRAINT `3dc950c6a8ad4323fa7064fb402a08` UNIQUE KEY(`email`);

@@ -1,0 +1,119 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "475dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "24dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s3015ecba5c943db87ce187bb5e5e168",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "392dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "data": {
+            "data": [
+                {
+                    "id": "card4",
+                    "status": "Missed",
+                    "title": "2021-11-29 15:25:27"
+                },
+                {
+                    "id": "card5",
+                    "status": "Assigned",
+                    "title": "2021-11-27 11:38:40"
+                },
+                {
+                    "id": "card6",
+                    "status": "Assigned",
+                    "title": "2021-10-24 11:20:42"
+                },
+                {
+                    "id": "cardpippo",
+                    "status": "Opened",
+                    "title": "2021-11-20 09:46:51"
+                },
+                {
+                    "id": "cardguga",
+                    "status": "Closed",
+                    "title": "2021-11-19 10:46:51"
+                },
+                {
+                    "id": "cardtoto",
+                    "status": "Closed",
+                    "title": "2021-11-17 13:20:11"
+                }
+            ],
+            "schema": [
+                {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "id",
+                    "columnHeaderType": "text",
+                    "columnID": "id",
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "fe9a9dfaca974577980d47be92da797a"
+                },
+                {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "title",
+                    "columnHeaderType": "text",
+                    "columnID": "title",
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "hd2544ad1f5f462985f09e5fbf13c63a"
+                },
+                {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "status",
+                    "columnHeaderType": "text",
+                    "columnID": "status",
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "f9b7ce63e6cc4d9e8e3142fc5653e9f0"
+                }
+            ]
+        },
+        "title": "Vehicle Inspection Requests"
+    },
+    "id": "portletInspection",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "jfe87f82e4c14903a8e337ee022979b4",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxBottom",
+    "pf": "frmMain",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "eaaa6a80a9894c89898ae12b21832f1d",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

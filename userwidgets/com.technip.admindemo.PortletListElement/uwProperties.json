@@ -1,0 +1,106 @@
+{
+    "classname": "PortletListElement",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a49f84e5757f4aa68052a3874f8a0af8",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickElement",
+                    "pw": {
+                        "displayName": "onClickElement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i12b291d1778403b8554024c1636a046",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Opened",
+                    "group": "General",
+                    "kuid": "ge0b09b5143040269f6e9be478b9fce0",
+                    "originalPropertyKey": "status",
+                    "propertyIndex": 1,
+                    "propertyKey": "status",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "status",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "i12b291d1778403b8554024c1636a046",
+                    "type": "list selector",
+                    "value": [
+                        "Opened",
+                        "Assigned",
+                        "Closed",
+                        "Missed",
+                        "Unknown"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "bc9199bbda7d4ce89e6bdbe6a999177a",
+                    "originalPropertyKey": "elementId",
+                    "propertyIndex": 3,
+                    "propertyKey": "elementId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "elementId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "i12b291d1778403b8554024c1636a046",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a1726e57f6404de49289eb73453e7cfe",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d8eb2c67da004ca98e767fe271766b5e"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.technip.admindemo",
+    "version": "1.0.0"
+}

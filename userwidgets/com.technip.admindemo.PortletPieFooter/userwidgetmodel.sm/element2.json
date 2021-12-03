@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "32dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s216801916534979a34790f5dfd3d04a",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "48dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "label": "ACTS",
+        "skinCircle": "s0cde5ceefdc4d2cac2a1eec99354257"
+    },
+    "id": "element2",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a379e3937be44add8869713f208b2d60",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "PortletPieFooter",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "c528172d9c3949e39225e3a0740a147d",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

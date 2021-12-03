@@ -1,0 +1,8 @@
+{
+  "filename": "TechnipAdmin.zip",
+  "channels": "responsive_web",
+  "upgradable": false,
+  "displayname": "TechnipAdmin",
+  "description": "Binary for TechnipAdmin",
+  "version": "1.0.0"
+}

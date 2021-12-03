@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "32dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "24dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s216801916534979a34790f5dfd3d04a",
+    "_width_": {
+        "type": "string",
+        "value": "240dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 0,
+    "data": {},
+    "id": "portletPieFooter",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ebc34ed0ca5e43f397db775b06f322fa",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "PortletPie",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "eb862d9c108643aab87574841782f48d",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

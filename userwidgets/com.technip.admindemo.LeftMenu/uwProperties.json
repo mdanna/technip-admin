@@ -1,0 +1,47 @@
+{
+    "classname": "LeftMenu",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "if518041573d47309adaab96c131cec6",
+                    "paramList": [
+                        {
+                            "name": "menuItem"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onMenuSelect",
+                    "pw": {
+                        "displayName": "onMenuSelect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c54a1d5490d8431cbfc7f8a63361bcc2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.technip.admindemo",
+    "version": "1.0.0"
+}

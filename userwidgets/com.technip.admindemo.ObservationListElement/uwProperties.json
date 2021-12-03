@@ -1,0 +1,127 @@
+{
+    "classname": "ObservationListElement",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jb3511459b1d4cec8ee6a30ce40c209a",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickElement",
+                    "pw": {
+                        "displayName": "onClickElement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i1312a75b22c41c798bb2d0c320d5e4b",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Opened",
+                    "group": "General",
+                    "kuid": "fbd1fc8a87794dafae4c4a1ce3a81969",
+                    "originalPropertyKey": "status",
+                    "propertyIndex": 1,
+                    "propertyKey": "status",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "status",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "i1312a75b22c41c798bb2d0c320d5e4b",
+                    "type": "list selector",
+                    "value": [
+                        "Opened",
+                        "Assigned",
+                        "Closed",
+                        "Missed",
+                        "Unknown"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "b7343b75e25d40858845ff5a97ceabb8",
+                    "originalPropertyKey": "elementId",
+                    "propertyIndex": 3,
+                    "propertyKey": "elementId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "elementId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "i1312a75b22c41c798bb2d0c320d5e4b",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e4e8011ef30b491c8914d8bcd7a132cf",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d907d8bc98164e3abe538f82438fb444"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b9ccba5d778143e8a57d3c7731d2f8d9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "name",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "name",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "eab908a79aa74cb5aeca1ec49238e4e2"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.technip.admindemo",
+    "version": "1.0.0"
+}

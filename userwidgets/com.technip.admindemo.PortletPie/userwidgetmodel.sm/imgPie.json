@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "323dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "106dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2a918266a50451fb8b5dc8d40a5696d",
+    "_src_": "pie_blue.png",
+    "_top_": {
+        "type": "string",
+        "value": "90dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "323dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "id": "imgPie",
+    "imagescalemode": 1,
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "aaa9ea4bec7e4d45a3c20dcfecc6d242",
+    "name": "kony.ui.Image2",
+    "parent": "PortletPie",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,71 @@
+{
+    "classname": "PortletPieFooterElement",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "defaultSkinKUID": "se0bb15df9d44435b99a813e1720ec9d",
+                    "group": "General",
+                    "kuid": "e0aefb8fe50e4f08811a6d0365f4dca2",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "skinCircle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skinCircle",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxCircle",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "jbb4acf8a35441adb02f1c152ae1c6b0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cddc03746cc94d4e86a34692ec0f9cc3",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "label",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblElement",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d73845be19934a98abc5b02903d8b3bd"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.technip.admindemo",
+    "version": "1.0.0"
+}

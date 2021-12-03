@@ -1,0 +1,15 @@
+{
+  "subType" : "customapp",
+  "description" : "Technip POC",
+  "version" : "1.0",
+  "objectSvcs" : [ {
+    "name" : "DropdownObjectTechnip",
+    "version" : "1.0",
+    "etag" : "ab71ac14-576b-470e-a750-b82c2f2d0703"
+  }, {
+    "name" : "ObservationTakenObject",
+    "version" : "1.0",
+    "etag" : "26281537-1e0f-42c9-ba7e-ac7ddfb6038b"
+  } ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

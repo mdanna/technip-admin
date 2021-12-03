@@ -1,0 +1,159 @@
+{
+    "classname": "PortletList",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j16f64a4fcec43f6967bcf229d7cf666",
+                    "paramList": [],
+                    "propertyKey": "reload",
+                    "pw": {
+                        "displayName": "reload",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eaaa6a80a9894c89898ae12b21832f1d",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ec0bc73950b7456abd2cc45dd51cedce",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSelectElement",
+                    "pw": {
+                        "displayName": "onSelectElement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eaaa6a80a9894c89898ae12b21832f1d",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [
+                            {
+                                "id": "card4",
+                                "status": "Missed",
+                                "title": "2021-11-29 15:25:27"
+                            },
+                            {
+                                "id": "card5",
+                                "status": "Assigned",
+                                "title": "2021-11-27 11:38:40"
+                            },
+                            {
+                                "id": "card6",
+                                "status": "Assigned",
+                                "title": "2021-10-24 11:20:42"
+                            },
+                            {
+                                "id": "cardpippo",
+                                "status": "Opened",
+                                "title": "2021-11-20 09:46:51"
+                            },
+                            {
+                                "id": "cardguga",
+                                "status": "Closed",
+                                "title": "2021-11-19 10:46:51"
+                            },
+                            {
+                                "id": "cardtoto",
+                                "status": "Closed",
+                                "title": "2021-11-17 13:20:11"
+                            }
+                        ],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "id",
+                                "columnHeaderType": "text",
+                                "columnID": "id",
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "fe9a9dfaca974577980d47be92da797a"
+                            },
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "title",
+                                "columnHeaderType": "text",
+                                "columnID": "title",
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "hd2544ad1f5f462985f09e5fbf13c63a"
+                            },
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "status",
+                                "columnHeaderType": "text",
+                                "columnID": "status",
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "f9b7ce63e6cc4d9e8e3142fc5653e9f0"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "acde79a3dd514651a4ac435d412746b3",
+                    "originalPropertyKey": "data",
+                    "propertyIndex": 2,
+                    "propertyKey": "data",
+                    "pw": {
+                        "displayName": "data",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "eaaa6a80a9894c89898ae12b21832f1d",
+                    "type": "data grid",
+                    "value": 3
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c4dbe88a9b1046fbba42a564ffd8cb9d",
+                    "originalPropertyKey": "title",
+                    "propertyIndex": 1,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "portletHeader",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "h3ad0cc67eee46afaec316c09a54cb74"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.technip.admindemo",
+    "version": "1.0.0"
+}

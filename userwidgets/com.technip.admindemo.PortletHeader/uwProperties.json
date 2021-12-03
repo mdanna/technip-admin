@@ -1,0 +1,135 @@
+{
+    "classname": "PortletHeader",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h7429b0b66634655a86bdce583f66b9a",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "jd2034432e8f4b96bc499296c2971bce"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e515e0729da84dd2a0c5330936f0dbb2",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 2,
+                    "propertyKey": "showZoom",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showZoom",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgZoom",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "d40e50f1f43d43ff97867a9a46a494ec"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b408aed487754120b7c501b124581dd5",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 3,
+                    "propertyKey": "showFilter",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showFilter",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgFilter",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "caae953b80814f95aded1072e8f8b8eb"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e6968d2c21d049ae8d4b38e3acc4e03c",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "subtitle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "subtitle",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblSubtitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "j26b743222544a24a9915eb48dba5ac9"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j9b869b2d47e46038c959078dc9fcd1d",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 5,
+                    "propertyKey": "showSubtitle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showSubtitle",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxBottom",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "cc9e980101c146fea19034ca63a5ba0d"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.technip.admindemo",
+    "version": "1.0.0"
+}

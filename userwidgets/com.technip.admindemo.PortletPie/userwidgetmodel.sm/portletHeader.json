@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "24dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s216801916534979a34790f5dfd3d04a",
+    "_top_": {
+        "type": "string",
+        "value": "24dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "323dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "showFilter": false,
+        "showZoom": false,
+        "title": "Observation Companies"
+    },
+    "id": "portletHeader",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b940ff155ae8485a89390f403ee9db8c",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "PortletPie",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "afbf5f0314d748849945e1b32b895d5e",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

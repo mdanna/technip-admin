@@ -1,0 +1,2 @@
+ALTER TABLE `ObservationTakenRules`
+	DROP FOREIGN KEY `27f89d361f84a3c60a0a0c2e2d5281`;
