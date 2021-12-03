@@ -63,79 +63,11 @@ define({
 
       const now = new Date();
 
-      let weekday = "";
-      let month = "";
-
-      switch(now.getDay()) {
-        case 0:
-          weekday = 'Sunday';
-          break;
-        case 1:
-          weekday = 'Monday';
-          break;
-        case 2:
-          weekday = 'Tuesday';
-          break;
-        case 3:
-          weekday = 'Wednesday';
-          break;
-        case 4:
-          weekday = 'Thursday';
-          break;
-        case 5:
-          weekday = 'Friday';
-          break;
-        case 6:
-          weekday = 'Saturday';
-          break;
-        default:
-          weekday = 'Sunday';
-          break;
-      }
-
-      switch(now.getMonth()) {
-        case 0:
-          month = 'January';
-          break;
-        case 1:
-          month = 'February';
-          break;
-        case 2:
-          month = 'March';
-          break;
-        case 3:
-          month = 'April';
-          break;
-        case 4:
-          month = 'May';
-          break;
-        case 5:
-          month = 'June';
-          break;
-        case 6:
-          month = 'July';
-          break;
-        case 7:
-          month = 'August';
-          break;
-        case 8:
-          month = 'September';
-          break;
-        case 9:
-          month = 'October';
-          break;
-        case 10:
-          month = 'November';
-          break;
-        case 11:
-          month = 'December';
-          break;
-        default:
-          break;
-      }
+      let weekday = utils.getReadableWeekday(now.getDay());
+      let month = utils.getReadableMonth(now.getMonth());
 
       this.view.appHeader.date = `${weekday}, ${month} ${now.getDate()}, ${now.getFullYear()}`;
-      this.view.appHeader.time = `${now.getHours()}:${now.getMinutes()}`;
+      this.view.appHeader.time = `${utils.formatTimeNumber(now.getHours())}:${utils.formatTimeNumber(now.getMinutes())}`;
 
       this.view.leftMenu.onMenuSelect = (menuItem) => {
         this.view.flxDashboard.isVisible = menuItem === 'dashboard';
