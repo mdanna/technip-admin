@@ -2,7 +2,20 @@
     "classname": "LeftMenu",
     "definitions": {
         "apis": {
-            "custom": [],
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j09832055261450ea3552150083cf987",
+                    "paramList": [],
+                    "propertyKey": "deselect",
+                    "pw": {
+                        "displayName": "deselect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c54a1d5490d8431cbfc7f8a63361bcc2",
+                    "type": "event"
+                }
+            ],
             "passthrough": []
         },
         "events": {
@@ -28,7 +41,9 @@
             "passthrough": []
         },
         "groups": {
-            "apis": [],
+            "apis": [
+                "General"
+            ],
             "events": [],
             "properties": [],
             "widgets": []

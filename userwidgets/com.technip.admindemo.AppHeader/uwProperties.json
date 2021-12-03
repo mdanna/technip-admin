@@ -17,7 +17,92 @@
         },
         "properties": {
             "custom": [],
-            "passthrough": []
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bfde81ae0f0e4bc2b3fb1ab6e9b4c8cf",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "showDateTime",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showDateTime",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxDateTime",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ff3f238b843745ae8359f46665383881"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e72b0b25e3f2465fa96499c6ea6df0ca",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "date",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "date",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblDate",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ebfb7e3a930446489c98cfdbd664ac2b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h71d03eae9e94cf99c417f757e71dca8",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "time",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "time",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTime",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e98c329b2c864070abcb4124fc55e285"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j15deb8ff76e46bcb82f4c4a475a2a4f",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 4,
+                    "propertyKey": "showObservationPath",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showObservationPath",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxObservationPath",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "f27ef884fff9434aa7a86e8e8ec1692a"
+                }
+            ]
         },
         "widgets": {
             "expose": [],

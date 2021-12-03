@@ -28,7 +28,8 @@ define({
           const observationElement = appData.observationList[i];
           portletListData.push({
             id: observationElement.ObservationID,
-            title: observationElement.LastUpdatedDateTime.substring(0, 16).replace('T', ' '),
+            title: observationElement.ObservationID.substring(0, 18),
+            //title: observationElement.LastUpdatedDateTime.substring(0, 16).replace('T', ' '),
             status: observationElement.status
           });
         }
@@ -46,8 +47,10 @@ define({
             bottom: '24dp'
           }, {}, {});
           cmpObsElement.elementId = element.ObservationID;
-          cmpObsElement.title = element.LastUpdatedDateTime.substring(0, 16).replace('T', ' ');
-          cmpObsElement.name = element.userName;
+          //cmpObsElement.title = element.LastUpdatedDateTime.substring(0, 16).replace('T', ' ');
+          //cmpObsElement.name = element.userName;
+          cmpObsElement.title = element.ObservationID.substring(0, 18);
+          cmpObsElement.name = element.LastUpdatedDateTime.substring(0, 16).replace('T', ' ');
           cmpObsElement.status = element.status;
           cmpObsElement.onClickElement = () => this.onSelectObservationElement(element.ObservationID);
           this.view.flxObservationList.add(cmpObsElement);
@@ -56,10 +59,90 @@ define({
         kony.application.dismissLoadingScreen();
       });
 
+      //init date and time
+
+      const now = new Date();
+
+      let weekday = "";
+      let month = "";
+
+      switch(now.getDay()) {
+        case 0:
+          weekday = 'Sunday';
+          break;
+        case 1:
+          weekday = 'Monday';
+          break;
+        case 2:
+          weekday = 'Tuesday';
+          break;
+        case 3:
+          weekday = 'Wednesday';
+          break;
+        case 4:
+          weekday = 'Thursday';
+          break;
+        case 5:
+          weekday = 'Friday';
+          break;
+        case 6:
+          weekday = 'Saturday';
+          break;
+        default:
+          weekday = 'Sunday';
+          break;
+      }
+
+      switch(now.getMonth()) {
+        case 0:
+          month = 'January';
+          break;
+        case 1:
+          month = 'February';
+          break;
+        case 2:
+          month = 'March';
+          break;
+        case 3:
+          month = 'April';
+          break;
+        case 4:
+          month = 'May';
+          break;
+        case 5:
+          month = 'June';
+          break;
+        case 6:
+          month = 'July';
+          break;
+        case 7:
+          month = 'August';
+          break;
+        case 8:
+          month = 'September';
+          break;
+        case 9:
+          month = 'October';
+          break;
+        case 10:
+          month = 'November';
+          break;
+        case 11:
+          month = 'December';
+          break;
+        default:
+          break;
+      }
+
+      this.view.appHeader.date = `${weekday}, ${month} ${now.getDate()}, ${now.getFullYear()}`;
+      this.view.appHeader.time = `${now.getHours()}:${now.getMinutes()}`;
 
       this.view.leftMenu.onMenuSelect = (menuItem) => {
         this.view.flxDashboard.isVisible = menuItem === 'dashboard';
         this.view.flxObservation.isVisible = menuItem === 'observation';
+        this.view.flxDetails.isVisible = false;
+        this.view.appHeader.showObservationPath = false;
+        this.view.appHeader.showDateTime = true;
       };
 
       this.view.portletObservation.onSelectElement = (elementId) => {
@@ -70,18 +153,46 @@ define({
   },
 
   onSelectObservationElement(elementId){
-    alert(elementId);
+    voltmx.application.showLoadingScreen(null, null, constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+
+    this.view.leftMenu.deselect();
+    this.view.flxDashboard.isVisible = false;
+    this.view.flxObservation.isVisible = false;
+    this.view.appHeader.showObservationPath = true;
+    this.view.appHeader.showDateTime = false;
 
     var dataObject = new kony.sdk.dto.DataObject("ObservationTakenRules");
     dataObject.odataUrl = `$filter=ObservationID eq ${elementId}`;  
-    
+
     this.objSvc.fetch({
       dataObject: dataObject
     }, (response) => {
-      const rules = [];
+      let rules = "";
+      let separator = "";
       response.records.forEach((record) => {
-        rules.push(record.Rule);
+        rules += separator;
+        rules += record.Rule;
+        separator = '\n';
       });
+      const observation = appData.getObservation(elementId);
+      this.view.blockId.content = observation.ObservationID.substring(0, 18);
+      this.view.blockDate.content = observation.LastUpdatedDateTime.substring(0, 16).replace('T', ' ');
+      this.view.blockEntity.content = observation.entity;
+      this.view.blockWorkingArea.content = observation.workingArea;
+      this.view.blockObservationType.content = observation.observationType;
+      this.view.blockHazardDef.content = observation.hazard;
+      this.view.blockHazardDetails.content = observation.hazardDetails;
+      this.view.blockProblemSolved.content = observation.problemCorrected;
+      this.view.blockPrevention.content = observation.actionTaken;
+      this.view.blockReoccurrance.content = observation.avoidReoccurance;
+      this.view.blockFurther.content = observation.furtherInvestigarion;
+      this.view.blockViolation.content = observation.rulesViolation;
+      this.view.blockRules.content = rules;
+
+      this.view.lblAssignee.text = observation.userName;
+
+      this.view.flxDetails.isVisible = true;
+      voltmx.application.dismissLoadingScreen();
     });
   }
 
